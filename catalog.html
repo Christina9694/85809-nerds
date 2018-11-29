@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-    	<meta charset="utf-8">
-    	<title>HTML Academy: Нёрдс</title>
-	</head>
-	<body>
-		<header class="main-heder">
-			<nav class="main-navigation">
-				<a сlass="main-heder-logo" href="index.html">
-					<img src="img/nerds-logo.png">
+<head>
+   	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+	<header class="main-heder">
+		<a сlass="main-heder-logo" href="index.html">
+			<img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип Нёрдс">
+		</a>
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li><a href="#">Студия</a></li>
+				<li><a href="#">Клиенты</a></li>
+				<li><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+
+			<ul class="user-navigation">
+				<li class="cart">Корзина</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Магазин готовых шаблонов</h1>
+
+		<b>Стоимость:</b>
+		<b>Сортировать:</b>
+		<ul class="sort">
+			<li><a class="sort-topic" href="#">По цене</a></li>
+			<li><a class="sort-topic" href="#">По типу</a></li>
+			<li><a class="sort-topic" href="#">По названию</a></li>
+		</ul>	
+		
+		<ul class="collating">
+			<li class="collating-topic">
+				<a class="sort-topic" href="#">
+					<img src="http://placehold.it">
 				</a>
-				<ul class="site-navigation">
-					<li><a href="#">Студия</a></li>
-					<li><a href="#">Клиенты</a></li>
-					<li><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<ul class="user-navigation">
-					<li class="cart">Корзина</li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<h1>Магазин готовых шаблонов</h1>
-			<b>Стоимость:</b>
-			<b>Сортировать:</b>
-			<ul class="sort">
-				<li><a class="sort-topic" href="#">По цене</a></li>
-				<li><a class="sort-topic" href="#">По типу</a></li>
-				<li><a class="sort-topic" href="#">По названию</a></li>
+			</li>     
+			<li class="collating-topic">
+				<a class="sort-topic" href="#">
+					<img src="http://placehold.it">
+				</a>
+			</li>     
+		</ul>
+		<!--Здесь будет формы-->
+
+		<section class="catalog">
+			<h2 class="visually-hidden">Список шаблонов</h2>
+
+			<ul class="catalog-list">
+				<li class="catalog-list-item">
+					<img src="img/img-sedona.jpg" width="360px" height="576px" alt="Sedona">  
+					<!--Форма-->
+				</li>
+				<li class="catalog-list-item">
+					<img src="img/img-pink.jpg" width="360px" height="576px" alt="Pink">  
+					<!--Форма-->   	    
+				</li>
+				<li class="catalog-list-item">
+					<img src="img/img-barbershop.jpg" width="360px" height="576px" alt="Barbershop"> 
+					<!--Форма-->	
+				</li>
+				<li class="catalog-list-item">
+					<img src="img/img-mishka.jpg" width="360px" height="576px" alt="Mishka">	
+					<!--Форма-->		
+				</li>
+				<li class="catalog-list-item">
+					<img src="img/img-aplus.jpg" width="360px" height="576px" alt="А+"> 
+					<!--Форма-->			
+				</li>
+				<li class="catalog-list-item">
+					<img src="img/img-kvast.jpg" width="360px" height="576px" alt="Квас"> 	
+					<!--Форма-->		
+				</li>
 			</ul>
-			<!--Здесь будет форма-->
-			<section class="catalog">
-				<h2 class="visually-hidden">Список шаблонов</h2>
-				<ul class="catalog-list">
-					<li class="catalog-list-item">
-						<img src="img/sedonaM.jpg">
-					</li>
-					<li class="catalog-list-item">
-						<img src="img/pinkM.jpg">
-					</li>
-					<li class="catalog-list-item">
-						<img src="img/barbershopM.jpg">
-					</li>
-					<li class="catalog-list-item">
-						<img src="img/mishkaM.jpg">
-					</li>
-					<li class="catalog-list-item">
-						<img src="img/a+M.jpg">
-					</li>
-					<li class="catalog-list-item">
-						<img src="img/kvassM.jpg">
-					</li>
-				</ul>
-			</section>
-			<ul class="pagination-list">
-				<li class="pagination-item"><a href="pagination-item-current">1</a></li>
-				<li class="pagination-item"><a href="#">2</a></li>
-				<li class="pagination-item"><a href="#">3</a></li>
-			</ul>
-			<a class="button-send">Следующая</a>
-		</main>
-		<footer сlass="main-footer">
-			<div class="footer-social">
-				<li><a сlass="social-button" href="#">Вконтакте</a></li>
-				<li><a сlass="social-button" href="#">Фейсбук</a></li>
-				<li><a сlass="social-button" href="#">Инстаграм</a></li>
+		</section>
+
+		<ul class="pagination-list">
+			<li class="pagination-item"><a href="pagination-item-current">1</a></li>
+			<li class="pagination-item"><a href="#">2</a></li>
+			<li class="pagination-item"><a href="#">3</a></li>
+			<a class="button-send" href="#">Следующая</a>     
+		</ul>
+
+		<div class="map">
+				<img src="img/map.jpg" width="1440px" height="416px" alt="Карта">
 			</div>
-			<b class="bold-footer">Давайте дружить, это выгодно!</b>
-			<p>Скидка 10% для друзей из социальных сетей</p>
-		</footer>
-	</body>
+		<!--Форма Напиши нам-->
+	</main>
+	<footer сlass="main-footer">
+		<ul class="footer-social">
+			<li><a сlass="social-button" href="#">Вконтакте</a></li>
+			<li><a сlass="social-button" href="#">Фейсбук</a></li>
+			<li><a сlass="social-button" href="#">Инстаграм</a></li>
+		</ul>
+		<b class="bold-footer">Давайте дружить, это выгодно!</b>
+		<p>Скидка 10% для друзей из социальных сетей</p>
+	</footer>
+</body>
 </html>
